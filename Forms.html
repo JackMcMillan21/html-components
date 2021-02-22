@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Forms</title>
+
+</head>
+<body>
+    <form>
+        <label for="adress">User Adress:</label>
+        <input type="text" name="adress" placeholder="123 Broadway" size ="30" maxlength="100" id="adress"/>
+
+        <label for="postal code">Postal Code:</label>
+        <input type="text" name="postal code" placeholder="A0A0A0" size ="30" maxlength="6" id="postal code"/>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" placeholder="France" size ="30" maxlength="60" id="city"/>
+
+    <p> Please Select a Shipping Service: </p>
+        <label for= "shipping"> Shipping Speed</label>
+            <select name = "shipping" id = "shipping">
+                <option value = "standard"> Standard Shipping </option>
+                <option value = "two-day"> Two Day Shipping </option>
+                <option value = "one-day"> One Day Shipping </option>
+            </select>
+
+    <p> Select A Payment Method: </p>
+    <label for= "paypal"> PayPal</label>
+    <input type="radio" name="payment" id="payment" checked/>
+
+    <label for= "debit"> Debit Card</label>
+    <input type="radio" name="payment" id="payment"/>
+
+    <label for= "credit"> Credit Card</label>
+    <input type="radio" name="payment" id="payment"/><br><br>
+
+    <label for ="comments">Comments</label>
+    <textarea name="comments" id="comments" rows="4" cols="40">Please talk about any comments you may have.</textarea><br><br>
+
+    <label for="saving-password">Save My Password</label>
+    <input type="checkbox" name="password" id="password"/><br><br>
+
+    <label for="submit">Submit</label>
+    <input type="button" name="submit" id="submit">
+
+    </form>
+</body>
+</html>
