@@ -7,15 +7,21 @@
 </head>
 <body>
     <form>
-        <label for="adress">User Adress:</label>
+        <!--  This next portion of code is asking for about the same thing, which is text input from the user. It is asking 
+        for the user's address the user's postal code and then finally the user's city because it needs it for the shipping info   -->
+        <label for="adress"><i>User Adress:</i></label>
+
         <input type="text" name="adress" placeholder="123 Broadway" size ="30" maxlength="100" id="adress"/>
 
-        <label for="postal code">Postal Code:</label>
-        <input type="text" name="postal code" placeholder="A0A0A0" size ="30" maxlength="6" id="postal code"/>
+        <label for="postal code"><i>Postal Code:</i></label>
+        <input type="text" name="postal code" placeholder="A0A0A0"size ="30" maxlength="6" id="postal code"/>
 
-        <label for="city">City:</label>
-        <input type="text" name="city" placeholder="France" size ="30" maxlength="60" id="city"/>
+        <label for="city"><i>City:</i></label>
+        <input type="text" name="city" placeholder="Paris" size ="30" maxlength="60" id="city"/>
 
+        <!--  This next portion is relating to the shipping speed and which option they would like to use. I am using a simple 
+        dropdwon menu because I feel that it is the best option considering that there is 3 availble options and after selecting
+        it will be very easy for them to know exactly what shipping option they have selected.  -->
     <p> Please Select a Shipping Service: </p>
         <label for= "shipping"> Shipping Speed</label>
             <select name = "shipping" id = "shipping">
@@ -24,6 +30,8 @@
                 <option value = "one-day"> One Day Shipping </option>
             </select>
 
+        <!-- This next portion is radio buttons that are simple circles that are filled in when the user selects them. They are used
+        to select how they will be paying for the order and it is automatically set on Paypal as a default, using the checked command.-->
     <p> Select A Payment Method: </p>
     <label for= "paypal"> PayPal</label>
     <input type="radio" name="payment" id="payment" checked/>
@@ -34,11 +42,19 @@
     <label for= "credit"> Credit Card</label>
     <input type="radio" name="payment" id="payment"/><br><br>
 
-    <label for ="comments">Comments</label>
+        <!-- This nex portion is just a simple text area that is added so that the user's can add any comments they have relating
+        to the shipping process or the layout of our website. It is asking for text input as well. -->
+    <label for ="comments"><b>Comments</b></label>
     <textarea name="comments" id="comments" rows="4" cols="40">Please talk about any comments you may have.</textarea><br><br>
 
-    <label for="saving-password">Save My Password</label>
-    <input type="checkbox" name="password" id="password"/><br><br>
+        <!-- The last portion of text is checkboxes that are added to see if they want to save there payment info and want to recieve
+        emails from the company. We have them both auto selected as yes because it will make it easier for the user to purchase from
+        us in the future and also becuase by sending them emails by defualt we bring us more business.-->
+    <label for="email-updates"><u>Sign me up for email updates?</u></label>
+    <input type="checkbox" name="email" id="email" checked/><br><br>
+
+    <label for="save-payment-info"><u>Save my payment info?</u></label>
+    <input type="checkbox" name="payment" id="payment" checked/><br><br>
 
     <label for="submit">Submit</label>
     <input type="button" name="submit" id="submit">
